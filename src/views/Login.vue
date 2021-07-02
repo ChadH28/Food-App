@@ -7,7 +7,7 @@
         <label for="email">Email</label>
       </div>
       <div>
-        <input type="text" name="email" v-model="form.email" id="email" />
+        <input type="text" name="email" v-model="customer_email" id="email" />
       </div>
       <div>
         <label for="password">Password</label>
@@ -16,7 +16,7 @@
         <input
           type="password"
           name="password"
-          v-model="form.password"
+          v-model="customer_password"
           id="password"
         />
       </div>
@@ -26,20 +26,38 @@
 </template>
 
 <script>
-// import axios from 'axios'
+import  { mapActions } from "vuex"
 export default {
   name: "login",
   data() {
     return {
-      form: {
-        email: "",
-        password: "",
-      },
+      customer_email: "",
+      customer_password: "",
     };
   },
   methods: {
-    async submit() {
-      alert("submitted");
+    ...mapActions({
+      signIn: 'auth/signIn'
+    }),
+    submit() {
+      this.signIn()
+      // const url = "http://localhost:3000/api/auth";
+      // fetch(url, {
+      //   method: "POST", //get post put delete, default GET
+      //   body: JSON.stringify({
+      //     customer_email: this.customer_email,
+      //     customer_password: this.customer_password,
+      //   }), //object containing data from vue from 2way data binding
+      //   mode: "cors", //if FE and BE are on diffeent hosts/url
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      // })
+      //   .then(response => response.json())
+      //   .then(json => {
+      //     console.log(json); //token
+      //     this.token = json.token;
+      //   });
     },
   },
 };
