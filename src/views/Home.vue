@@ -1,18 +1,39 @@
 <template>
-  <div class="home">
+    <div class="home">
         <Carousel/>
-    <img alt="Vue logo" src="../assets/logo.png">
-  </div>
+        <header class="text-center">
+            <div class="card-body">
+                <h1 class="card-title Header">FLAVOURS TO SUIT OH SO MANY PALATES</h1>
+                <h4 class="card-text">Your home for quality frozen meals delivered in Cape Town</h4>
+            </div>
+        </header>
+        <itemCarousel/>
+        <deliveryMethod/>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">Happy with your experience?</div>
+                <div class="col-sm">Review us on google</div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-
 import Carousel from "@/components/Carousel.vue";
+import itemCarousel from "@/components/ItemCarousel.vue";
+import deliveryMethod from "@/components/DeliveryMethod.vue";
 
 export default {
-  name: 'Home',
-  components: {
-    Carousel,
-  }
+    name: 'Home',
+    components: {
+        Carousel,
+        itemCarousel,
+        deliveryMethod
+    }
 }
 </script>
+
+
+<style>
+
+</style>

@@ -15,7 +15,7 @@
         </ul>
       </div>
     </nav>
-    <nav  id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav  id="nav" class="navbar main-nav navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -51,6 +51,11 @@
   height: auto;
   padding: 5px;
 }
+
+/* .main-nav {
+  margin-top: 60px;
+  margin-bottom: 44px; 
+} */
 
 .ribbon {
   text-align: center;
