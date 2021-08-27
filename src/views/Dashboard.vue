@@ -16,17 +16,5 @@ export default {
 </script>
 
 <style>
-#nav {
-  padding: 30px;
-  background-color: grey;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: tomato;
-}
 </style>
