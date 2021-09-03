@@ -62,7 +62,7 @@
   height: auto;
   padding: 5px;
   width: 100%;
-  background-color: tomato;
+  background-color: #A8D3CC;
 }
 
 
@@ -75,7 +75,7 @@
 }
 
 #nav a.router-link-exact-active {
-  color: tomato;
+  color: #A8D3CC;
 }
 
 </style>

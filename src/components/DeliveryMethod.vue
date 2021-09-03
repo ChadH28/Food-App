@@ -19,17 +19,17 @@
 
 <style>
 .collection {
-    background-color: peru;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 15px;
 }
 
 .method-section {
     margin-top: 15px;
-    background-color: grey;
+    color: white;
 }
 
 .delivery {
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 15px;
 }
 </style>
